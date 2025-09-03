@@ -19,7 +19,7 @@
                     <li><a href="#about">About us</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
-                <span id="button"><button>Donate</button></span>
+                <span onclick="open_card()"><button>Donate</button></span>
             </nav>
             <section>
                 <h2>
@@ -29,7 +29,6 @@
                     "Every Donation counts in making a difference, Your support
                     Helps us bring positive change to those who need it most."
                 </h3>
-                <button>Donate</button>
             </section>
         </div>
 
@@ -130,8 +129,8 @@
             </span>
         </div>
 
-        <div class="donation_card">
-
+        <div class="donation_card" id="donation_card">
+            <p onclick="close_card()">&times;</p>
         </div>
     </div>
 

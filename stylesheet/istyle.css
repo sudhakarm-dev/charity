@@ -9,6 +9,7 @@
     --card-skeleton-color:#a8a8a8;
     --h2-color:#000000;
     --anchor-color:whitesmoke;
+    --donation-card:whitesmoke;
 
     --base-top-margin:140px;
 }
@@ -34,6 +35,7 @@ button{
     font-weight: 400;
     cursor: pointer;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    transition: all 100ms ease-in;
 }
 span{
     display: block;
@@ -313,7 +315,14 @@ h2{
 
 }
 .donation_card{
-    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--donation-card);
+    height: 450px;
+    width: 700px;
+    border-radius: 8px;
 }
 
 /* Animation section */
@@ -331,6 +340,10 @@ h2{
     text-decoration: underline;
     cursor: pointer;
 }  
+button:hover{
+    width: 140px;
+    height: 48px;
+}
 
 
 /* about section animation */
