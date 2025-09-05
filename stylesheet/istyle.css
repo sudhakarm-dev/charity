@@ -35,7 +35,7 @@ button{
     font-weight: 400;
     cursor: pointer;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    transition: all 100ms ease-in;
+    transition: all 200ms ease-in;
 }
 span{
     display: block;
@@ -318,6 +318,9 @@ h2{
     text-indent: 15px;
 }
 .donation_card{
+    z-index: 2000;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -338,7 +341,44 @@ h2{
     font-weight: 600;
     text-align: center;
     cursor: pointer;
+    z-index: 2000;
 }
+.donation_card .payment_card{
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.donation_card .payment_card h2{
+    width: 100%;
+    height: 20px;
+    flex: 1 0 0;
+    text-align: center;
+    margin-top: 10px;
+}
+.donation_card .payment_card h3{
+    height: 20px;
+    text-align: center;
+    flex: 1 0 0;
+    width: 100%;
+}
+.donation_card .payment_card .payment_btns{
+    width: 100%;
+    flex: 5 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
 
 /* Animation section */
 
