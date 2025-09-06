@@ -4,46 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheet/istyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>ABC Charity</title>
 </head>
 <body id="body">
     <div class="container">
+
+        <!-- Home section start's -->
         <div class="home" id="home">
-            <nav>
-                <span>
+            <nav id="navbar">
+                <span id="company_name">
                     <h3 style="cursor: pointer;">ABC Foundation</h3>
                 </span>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#event">Event</a></li>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                <ul id="u_list">
+                    <li id="home_link"><a href="#home">Home</a></li>
+                    <li id="event_link"><a href="#event">Event</a></li>
+                    <li id="about_link"><a href="#about">About us</a></li>
+                    <li id="contact_link"><a href="#contact">Contact Us</a></li>
                 </ul>
-                <span onclick="open_card()"><button>Donate</button></span>
+                <span id="card_btn"><button onclick="open_card()">Donate</button></span>
             </nav>
-            <section>
-                <h2>
-                    " Together ,we can make a difference "<br>
+            <section id="home_quote">
+                <h2 id="heading_2">
+                    " Together ,we can make a difference "
                 </h2>
-                <h3>
-                    "Every Donation counts in making a difference, Your support
-                    Helps us bring positive change to those who need it most."
+                <h3 id="heading_3">
+                    "Every Donation counts in making a difference, Your support Helps us bring positive change to those who need it most."
                 </h3>
             </section>
         </div>
+        <!-- home section ends -->
 
 
+        <!-- event section starts -->
         <div class="event" id="event">
-            <span id="heading_1">
-                <h1>
+            <span id="heading">
+                <h2 id="heading_2">
                     "Be a part of Our Upcoming Events"
-                </h1>
-            </span>
-            <span id="heading_2">
-                <h2>
-                    Stay connected with our upcoming outreach programs and events.
-                    Together, we can bring change to those who need it most.
                 </h2>
+            </span>
+            <span id="heading">
+            <h3 id="heading_3">
+                    Stay connected with our upcoming outreach programs and events. Together, we can bring change to those who need it most.
+                </h3>
             </span>
             <span class="card">
                 <div id="card_1">
@@ -60,25 +63,27 @@
                     <p>learn more</p>
                 </div>
             </span>
-            <span id="heading_3">
-                <p>
+            <span id="heading">
+                <p id="para">
                     your support makes these events possible-every donation
                     helps us reach more lives with warmth and care.
                 </p>
             </span>
         </div>
+        <!-- Event section ends -->
 
+        <!--  About section starts -->
         <div class="about" id="about">
-            <span id="heading_1">
-                <h1>
+            <span id="heading">
+                <h2 id="heading_2">
                     Providing Hope and Essentials to those in Need
-                </h1>
+                </h2>
             </span>
-            <span id="heading_2">
-                <h2>
+            <span id="heading">
+                <h3 id="heading_3">
                     Every day, we deliver nutritious mean, warm clothing, and heartfelt
                     care to people living in extreme condition
-                </h2>
+                </h3>
             </span>
             <span class="card">
                 <div id="card_1" style="background-image: url(./images/food.png);"></div>
@@ -86,61 +91,64 @@
                 <div id="card_3" style="background-image: url(./images/bed_sheet.png);"></div>
                 <div id="card_4" style="background-image: url(./images/water.png);"></div>
             </span>
-            <span id="heading_3">
-                <p>
+            <span id="heading">
+                <p id="para">
                     we aim to restore diginity and hope through consistent support,
                     creating a path towards a better life for those in need.
                 </p>
-            </span>
-            <span id="heading_4">
-                <h2>
+                <p style="font-size: 24px; text-align: center; color:#6A4423; margin-top: 10px;">
                     Our Team
-                </h2>
+                </p>
             </span>
             <span class="tcard">
-                <div id="tcard_1" style="background-image: url(./images/team_pic_1.png); background-repeat: no-repeat; background-size: cover;"></div>
-                <div id="tcard_2" style="background-image: url(./images/team_pic_2.png); background-repeat: no-repeat; background-size: cover
-                ;"></div>
+                <div id="tcard tcard_1" style="background-image: url(./images/team_pic_1.png); background-repeat: no-repeat; background-size: cover;"></div>
+                <div id="tcard tcard_2" style="background-image: url(./images/team_pic_2.png); background-repeat: no-repeat; background-size: cover;"></div>
             </span>
         </div>
+        <!-- about section ends -->
 
+        <!-- contact section starts -->
         <div class="contact" id="contact">
-            <span id="heading_1">
-                <h2>We'd love to connect with you</h2>
+            <span id="heading">
+                <h2 id="heading_2">We'd love to connect with you</h2>
             </span>
-            <span id="heading_2">
-                <h3>
+            <span id="heading">
+                <h3 id="heading_3">
                     Reach out for Collaborations, Donations, or help
                 </h3>
             </span>
             <span class="ccard">
-                <address>
-
-                    <p>e-mail  : msudhakar.dev@gmail.com</p>
-                    <p>Address : xyz,company,tuty</p>
-                    <p><a href="www.linkedin.com/in/sudhakar-m-430809315">linked</a>,<a href="">nukri</a>,<a href="">github</a></p>
-                </address>
-                    <form>
-                        <input type="email" placeholder="E-mail...">
-                        <input type="text" placeholder="Subject...">
-                        <textarea placeholder="Content..." style="height: 100px; width: 400px; resize: none; border-radius: 8px;"></textarea>
-                        <button type="submit">send</button>
+                    <form onsubmit="send_mail(event)">
+                        <input type="email" placeholder="E-mail..." id="email" required>
+                        <input type="text" placeholder="Subject..." id="subject" required>
+                        <textarea placeholder="Content..." style="height: 100px; width: 400px; resize: none;" id="content" required></textarea>
+                        <button type="submit">Send</button>
                     </form>
             </span>
         </div>
 
+        <footer id="footer" class="footer">
+            <address id="address">
+                <p>Designed & Developed By M Sudhakar</p>
+                <p>E-mail : <a href="mailto:msudhakar.dev@gmail.com" style="color: inherit; ">msudhakar.dev@gmail.com</a></p> 
+                <p><a href="https://www.linkedin.com/in/sudhakar-m-430809315/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin fa-2x"></i></a><a href="https://github.com/sudhakarm-dev" target="_blank" title="GitHub"><i class="fa-brands fa-github fa-2x"></i></a></p>
+            </address>
+        </footer>
+
+
         <div class="donation_card" id="donation_card">
-            <p onclick="close_card()">&times;</p>
+            <p onclick="close_card()" id="close_btn">&times;</p>
+            <h2 id="heading_2">Make a Difference Today</h2>
+            <h3 id="heading_3">Your donation helps us deliver food,cloths,and care to those in need.</h3>
             <div class="payment_card">
-                <h2>Every single Rupees is a Help</h2>
-                <h3>this is a heading 3</h3>
                 <span class="payment_btns">
                     <button>100</button>
                     <button>200</button>
                     <button>500</button>
                     <button>1000</button>
-                    <button>Custom</button>
+                    <button onclick="custom_amt()" id="custom">Custom</button>
                 </span>
+                <input type="text" placeholder="Enter amount" id="custom_amount">
             </div>
         </div>
     </div>
