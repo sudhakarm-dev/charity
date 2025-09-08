@@ -13,10 +13,18 @@ function open_card(){
     const ua=navigator.userAgent;
     const close=document.getElementById("donation_card");
     close.style.display = "block";
-    if(/Android/i.test(ua)){
-        const payment_btn=document.getElementById("payment_btns").style.translate = "0%";
-        const qr=document.getElementById("qr-card").style.display = "none";
-    }
+
+
+    const paymentBtns = document.querySelector(".payment_btns");
+  const qrCard = document.querySelector(".qr-card");
+
+  if (/Android/i.test(ua)) {
+    paymentBtns.style.display = "flex";
+    qrCard.style.display = "none";
+  } else {
+    paymentBtns.style.display = "none";
+    qrCard.style.display = "block";
+  }
 }
 
 // to send mail with custom message
