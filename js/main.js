@@ -10,8 +10,13 @@ function close_card(){
     amt.style.display = "none";
 }
 function open_card(){
+    const ua=navigator.userAgent;
     const close=document.getElementById("donation_card");
     close.style.display = "block";
+    if(/Android/i.test(ua)){
+        const payment_btn=document.getElementById("payment_btns").style.translate = "0%";
+        const qr=document.getElementById("qr-card").style.display = "none";
+    }
 }
 
 // to send mail with custom message
@@ -36,7 +41,7 @@ function custom_amt(){
   }
 
   //amount payment function
-  function payNow(amount) {
+  function paynow(amount) {
     const upiid="abccharity@icicibank";
     const ua = navigator.userAgent;
   

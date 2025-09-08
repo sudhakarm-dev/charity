@@ -323,6 +323,7 @@ form input{
     width: 100%;
     height: 360px;
     position: relative;
+    overflow: hidden;
 }
 .donation_card .payment_card .payment_btns{
     display: flex;
