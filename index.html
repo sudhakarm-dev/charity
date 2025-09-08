@@ -142,13 +142,20 @@
             <h3 id="heading_3">Your donation helps us deliver food,cloths,and care to those in need.</h3>
             <div class="payment_card">
                 <span class="payment_btns">
-                    <button>100</button>
-                    <button>200</button>
-                    <button>500</button>
-                    <button>1000</button>
+                    <button onclick="paynow(100)">100</button>
+                    <button onclick="paynow(200)">200</button>
+                    <button onclick="paynow(500)">500</button>
+                    <button onclick="paynow(1000)">1000</button>
                     <button onclick="custom_amt()" id="custom">Custom</button>
+                    <input type="text" placeholder="Enter amount" id="custom_amount">
                 </span>
-                <input type="text" placeholder="Enter amount" id="custom_amount">
+                <span class="qr-card">
+                    <img src="./images/qr_code.png">
+                    <p>UPI Id : abcchaarity@icicibank</p>
+                    <p>Bank Name : ICICI Bank </p>
+                    <p>IFSC Code : ICICI50124R </p>
+                    <p>Kindly Mail us After Payment</p>
+                </span>
             </div>
         </div>
     </div>

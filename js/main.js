@@ -34,3 +34,39 @@ function custom_amt(){
     const custom=document.getElementById("custom");
     custom.textContent = "Send";
   }
+
+  //amount payment function
+  function payNow(amount) {
+    const upiid="abccharity@icicibank";
+    const ua = navigator.userAgent;
+  
+    if (/Android/i.test(ua)) {
+      // UPI deep link
+      const upiUrl = `upi://pay?pa=${upiid}&pn=ABC%20Charity&am=${amount}&cu=INR&tn=Donation`;
+      window.location.href = upiUrl;
+    } else if (/iPhone|iPad/i.test(ua)) {
+      alert("Please use Apple Pay (Safari only).");
+    } else {
+      alert("Please scan the QR code to donate.");
+    }
+  }
+
+//for custom aount function
+  function custom_amt() {
+    const amtInput = document.getElementById("custom_amount");
+    amtInput.style.display = "block";
+  
+    const customBtn = document.getElementById("custom");
+    customBtn.textContent = "Pay";
+  
+    customBtn.onclick = function () {
+      const amount = amtInput.value;
+      if (!amount || isNaN(amount)) {
+        alert("Enter a valid amount");
+        return;
+      }
+      payNow(amount);
+    };
+  }
+  
+  
